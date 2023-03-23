@@ -343,7 +343,7 @@ globalkeys = gears.table.join(
     --          {description = "run prompt", group = "launcher"}),
 
     awful.key({modkey}, "r", function() 
-	awful.spawn("rofi -show combi -combi=drun,run")
+	awful.spawn("rofi -combi-modi drun,ssh -font \"Terminus 10\" -show combi -icon-theme -show-icons")
     end),
 
     awful.key({modkey, "Shift"}, "s", function() 
