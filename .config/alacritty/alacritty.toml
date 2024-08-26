@@ -1,7 +1,7 @@
 [bell]
 animation = "Linear"
 color = "#ffffff"
-duration = 150
+duration = 100
 
 [colors.bright]
 black = "0x1E222A"
@@ -41,3 +41,9 @@ decorations = "none"
 dynamic_padding = false
 opacity = 0.8
 title = "BauTerm"
+
+[cursor]
+blink_interval = 500
+[cursor.style]
+shape = "Block"
+blinking = "Always"
