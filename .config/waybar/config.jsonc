@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["hyprland/window"],
-    "modules-right": ["custom/gpu", "temperature", "idle_inhibitor", "pulseaudio", "network", "backlight", "custom/power_profile", "battery", "clock", "tray"],
+    "modules-right": ["custom/asus_fan", "custom/gpu", "temperature", "idle_inhibitor", "pulseaudio", "network", "backlight", "custom/power_profile", "battery", "clock", "tray"],
      "hyprland/workspaces": { 
          "disable-scroll": false,
          "all-outputs": false,
@@ -17,6 +17,11 @@
              "focused": "",
              "default": ""
          }
+     },
+     "custom/asus_fan": {
+      "format": " Fan:{} ",
+      "exec": "cat /sys/devices/platform/asus-nb-wmi/throttle_thermal_policy",
+      "interval": 2
      },
     "custom/power_profile": {
       "format": " {} ",
